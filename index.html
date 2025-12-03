@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LensCraft Photography</title>
+  <style>
+    body { margin: 0; font-family: 'Poppins', sans-serif; background: #f4f4f4; }
+    header { background: linear-gradient(135deg, #000000, #434343); padding: 60px 20px; text-align: center; color: white; }
+    nav { background: #1a1a1a; text-align: center; padding: 12px; }
+    nav a { color: #fff; margin: 0 20px; text-decoration: none; font-weight: 600; }
+    h2 { color: #222; margin-top: 40px; }
+
+    .container { width: 90%; margin: auto; padding: 20px 0; }
+
+    /* Category Grid */
+    .categories { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+    .category { position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+    .category img { width: 100%; height: 220px; object-fit: cover; transition: 0.3s ease; }
+    .category:hover img { transform: scale(1.1); }
+    .category-title { position: absolute; bottom: 10px; left: 10px; background: rgba(0,0,0,0.6); padding: 8px 15px; color: white; border-radius: 5px; font-size: 18px; }
+
+    /* Booking Form */
+    .booking { margin-top: 40px; background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
+    .booking input, .booking select { width: 100%; padding: 12px; margin: 10px 0; border-radius: 6px; border: 1px solid #ccc; }
+    .booking button { width: 100%; padding: 12px; background: #000; color: #fff; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>LensCraft Photography</h1>
+  <p>Capturing emotions, one frame at a time 📸</p>
+</header>
+
+<nav>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#booking">Book Session</a>
+</nav>
+
+<div class="container">
+
+  <!-- Portfolio Categories -->
+  <section id="portfolio">
+    <h2>Photography Categories</h2>
+    <div class="categories">
+
+      <div class="category">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" />
+        <div class="category-title">Portraits</div>
+      </div>
+
+      <div class="category">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" />
+        <div class="category-title">Weddings</div>
+      </div>
+
+      <div class="category">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" />
+        <div class="category-title">Nature</div>
+      </div>
+
+      <div class="category">
+        <img src="https://images.unsplash.com/photo-1521335629791-ce4aec67dd47" />
+        <div class="category-title">Fashion</div>
+      </div>
+
+      <div class="category">
+        <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30" />
+        <div class="category-title">Travel</div>
+      </div>
+
+      <div class="category">
+        <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2" />
+        <div class="category-title">Product</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section id="booking">
+    <h2>Book a Photography Session</h2>
+    <div class="booking">
+      <input type="text" placeholder="Full Name" />
+      <input type="email" placeholder="Email Address" />
+      <input type="tel" placeholder="Phone Number" />
+
+      <select>
+        <option>Select Photography Type</option>
+        <option>Portrait</option>
+        <option>Wedding</option>
+        <option>Nature</option>
+        <option>Fashion</option>
+        <option>Travel</option>
+        <option>Product</option>
+      </select>
+
+      <input type="date" />
+      <button>Book Now</button>
+    </div>
+  </section>
+
+</div>
+
+</body>
+</html>
